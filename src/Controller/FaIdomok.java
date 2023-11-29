@@ -33,8 +33,10 @@ public class FaIdomok {
         
         System.out.printf("Az össz súly: %.2f\n", osszSuly());
         System.out.printf("A gömbök össz súlya: %.2f\n", osszGombSuly());
-        System.out.println("minV: " + minV());
-        System.out.println("maxV: " + maxV());
+        System.out.print("minV: " + minV());
+        System.out.printf(", típusa: %s\n", minV().getClass().getSimpleName());
+        System.out.print("maxV: " + maxV());
+        System.out.printf(", típusa: %s\n", maxV().getClass().getSimpleName());
     }
 
     public double osszSuly() {
